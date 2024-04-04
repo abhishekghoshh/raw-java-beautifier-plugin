@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "GitHub Java Beautifier",
+    "version": "1.0",
+    "description": "Beautify raw GitHub Java pages",
+    "permissions": ["activeTab", "storage"],
+    "content_scripts": [
+      {
+        "matches": ["*://github.com/*","*://raw.githubusercontent.com/*","*://*.github.io/*"],
+        "js": ["content.js"],
+        "css": ["style.css"]
+      }
+    ]
+  }
